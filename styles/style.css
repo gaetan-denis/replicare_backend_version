@@ -1,0 +1,39 @@
+h1 {
+    text-transform: capitalize;
+    font-size:50px;
+}
+
+h2  {
+    text-transform: capitalize;
+    font-size:25px;
+}
+
+.success{
+
+    align-items: center;
+    background-color: green;
+    color: white;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+}
+.error{
+    align-items: center;
+    background-color: red;
+    color: white;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+}
+
+li{
+    margin-right: 12px;
+}
+
+nav a{
+    text-transform: capitalize;
+}
