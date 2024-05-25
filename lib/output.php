@@ -1,4 +1,10 @@
 <?php
+
+/**
+ * @param string $content
+ * @return void
+ */
+
 function getContent(string $content): void
 {
     if (is_array(FILE_EXT)) {
@@ -11,6 +17,10 @@ function getContent(string $content): void
     }
 }
 
+/**
+ * @return void
+ */
+
 function connectionStatus(){
     global $connection;
     if($connection instanceof PDOException){
@@ -21,3 +31,4 @@ function connectionStatus(){
 
     require_once 'view/nav.html';
 }
+
