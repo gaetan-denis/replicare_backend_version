@@ -28,8 +28,8 @@ if (!empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST[('
         $password=password_hash($password, PASSWORD_DEFAULT);
         $email=htmlspecialchars($email);
 
-        $insertUser = $connection->prepare("INSERT INTO users (users_username, users_password, users_email) VALUES (?, ?, ?)");
-                    $insertUser->execute([$username, $password, $email]);
+        $insertUser = $connection->prepare("INSERT INTO users (users_username, users_password, users_email,users_created_at) VALUES (?, ?, ?,NOW())");
+                    $insertUser->execute([$username, $password, $email,]);
                     $count = $insertUser->rowCount();
                     if ($count != 1) {
                         $error[]= 'Erreur lors de l\'enregistrement';

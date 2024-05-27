@@ -1,9 +1,11 @@
 h1 {
+
   background-color: #1b191a;
   color: #a99d6c;
   font-size: 50px;
   padding: 20px;
   text-transform: capitalize;
+
 }
 
 h2 {
@@ -13,69 +15,80 @@ h2 {
 }
 
 p {
-  padding: 20px;
+    padding: 20px;
 }
 
 ul {
-  display: flex;
+    display: flex;
 }
 
 li {
-  margin-right: 12px;
+    margin-right: 12px;
 }
 
 nav {
-  padding: 20px;
+    padding: 20px;
 }
 
 nav a {
-  color: #a99d6c;
-  text-decoration: none;
-  text-transform: capitalize;
-  padding: 0 20px;
+    color: #a99d6c;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0 20px;
 }
 
 nav a:hover {
-  color: #cfc8ac;
-  text-decoration: underline;
-  transition: 0.5s;
+
+    color: lighten(#a99d6c, 20%);
+    text-decoration: underline;
+    transition: 0.5s;
 }
 
 input {
-  border-radius: 6px;
-  border: 1px solid black;
+    border-radius: 6px;
+
+    border: 1px solid black;
 }
 
 nav {
-  background-color: #1b191a;
+    background-color: #1b191a;
+
+
 }
 
 nav ul {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
+
 .form-container {
-  width: 500px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .form-container input {
-  margin-bottom: 10px;
+
+    margin-bottom: 10px;
+
 }
 
 .title-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #1b191a;
-  padding: 0 20px;
-  color: #a99d6c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b191a;
+    padding: 0 20px;
+    color: #a99d6c;
+
 }
 
+// Messages Style //
+
 .success-message {
+
   background-color: #d4edda;
   color: #155724;
   border: 1px solid #c3e6cb;
@@ -89,6 +102,7 @@ nav ul {
 }
 
 .error-message {
+
   background-color: #f8d7da;
   color: #721c24;
   border: 1px solid #f5c6cb;
@@ -101,4 +115,3 @@ nav ul {
   margin: 0;
 }
 
-/*# sourceMappingURL=style.css.map */

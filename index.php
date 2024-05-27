@@ -10,9 +10,7 @@ $connection = connection();
 
 require 'lib/access.php';
 require 'lib/output.php';
-require_once 'view/header.html';
-
-sessionCheck();
+require_once 'view/header.php';
 
 require_once 'view/nav.php';
 
