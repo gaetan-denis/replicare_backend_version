@@ -1,14 +1,20 @@
 <h2>s'enregistrer</h2>
 
-<form method="post" action="index.php?view=lib/signup">
-    <label for="username">votre nom d’utilisateur</label>
-    <input type="text" name="username" id="username">
-    <label for="password">votre mot de passe</label>
+
+<div class="form-container">
+<form method="post" action="index.php?view=lib/signup" >
+    <label for="username">Veuillez choisir un nom d'utilisateur</label>
+    <input type="text" name="username" id="username" autocomplete="off">
+    <br>
+    <label for="password">Veuillez choisir un mot de passe</label>
     <input type="password" name="password" id="password">
+    <br>
     <label for="confirmPassword">Veuillez confirmer votre mot de passe</label>
     <input type="password" name="confirmPassword" id="confirmPassword">
-    <label for="email">votre email</label>
-       <input type="email" name="email" id="email">
-    <input type="submit">
-
+    <br>
+    <label for="email">Veuillez entrer votre email</label>
+    <input type="email" name="email" id="email" autocomplete="off">
+    <br>
+    <input type="submit" value="S'inscrire">
 </form>
+</div>

@@ -84,7 +84,7 @@ function displayErrors($errors)
 {
     if (!empty($errors)) {
         foreach ($errors as $error) {
-            echo '<div class="error" role="alert">' . $error . '</div>';
+            echo '<div class="error-message" role="alert">' . $error . '</div>';
         }
         echo "<br><a href='index.php?view=view/signup'>Réessayer</a>";
     } else {

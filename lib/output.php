@@ -24,11 +24,21 @@ function getContent(string $content): void
 function connectionStatus(){
     global $connection;
     if($connection instanceof PDOException){
-        echo "<p class='error'>"."Erreur pendant la tentative de connexion: ".$connection->getMessage()."</p>";
+        echo "<div class='error-message'>"."Erreur pendant la tentative de connexion: ".$connection->getMessage()."</div>";
     }else {
-        echo "<p class='success'>"."La connexion s'est effectuée avec succès"."</p>";
+        echo "<div class='success-message'>"."La connexion s'est effectuée avec succès"."</div>";
     }
 
-    require_once 'view/nav.html';
+    require_once 'view/nav.php';
 }
 
+/**
+ * @return void
+ */
+function sessionCheck(){
+    if(isset($_SESSION['id'])){
+        echo 'Bonjour '.$_SESSION['username'].'<br>';
+    }else{
+        echo 'Bonjour Visiteur';
+    }
+}

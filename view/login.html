@@ -1,11 +1,13 @@
 <h2>se connecter</h2>
 
-<form method="post" action="index.php?view=lib/login">
+<form method="post" action="index.php?view=lib/login" class="form-container">
     <label for="username">votre nom d’utilisateur</label>
-    <input type="text" name="username" id="username">
+    <input type="text" name="username" id="username" autocomplete="off">
+    <br>
     <label for="password">votre mot de passe</label>
     <input type="password" name="password" id="password">
-    <input type="submit">
+    <br>
+    <input type="submit" value="Se connecter" name="submitButton">
 </form>
 
-pas encore enregistré? faites-le <a href="index.php?view=view/signup">ici</a>
+Pas encore enregistré? faites-le <a href="index.php?view=view/signup">ici</a>

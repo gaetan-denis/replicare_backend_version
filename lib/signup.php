@@ -34,7 +34,8 @@ if (!empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST[('
                     if ($count != 1) {
                         $error[]= 'Erreur lors de l\'enregistrement';
                     } else {
-                        echo "<p class='success'>Votre enregistrement s’est effectué avec succès" . "</p>";
+
+                        echo '<p class="success-message">'.'Votre enregistrement s’est effectué avec succès'. '</p>';
                     }
     }
 
