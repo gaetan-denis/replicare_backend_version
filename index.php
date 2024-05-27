@@ -16,7 +16,6 @@ connectionStatus();
 if (!empty($_GET['view'])) {
     getContent($_GET['view']);
 }
-
 require_once 'view/footer.html';
 
 
