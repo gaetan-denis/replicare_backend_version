@@ -42,8 +42,4 @@ if (!empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST[('
     $errors[]='Veuillez remplir tous les champs';
 }
 
-if(!empty($errors)){
-    foreach ($errors as $error) {
-        echo "<p class='error'>" . $error . "</p>";
-    }echo "<br><a href='index.php?view=view/signup'>Réessayer</a>";
-}
+displayErrors($errors);

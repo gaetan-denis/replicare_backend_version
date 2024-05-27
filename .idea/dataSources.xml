@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Replicare" uuid="0ffb1c45-a099-4272-a90e-47d918719dd8">
+    <data-source source="LOCAL" name="Replicare" uuid="77d3407a-d399-44ef-babd-2abd105dfecf">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/test_php</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/replicare</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

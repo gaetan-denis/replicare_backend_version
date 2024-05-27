@@ -75,3 +75,20 @@ function validateEmail($email)
         return null;
     }
 }
+
+/**
+ * @param $errors
+ * @return void|null
+ */
+function displayErrors($errors)
+{
+    if (!empty($errors)) {
+        foreach ($errors as $error) {
+            echo '<div class="error" role="alert">' . $error . '</div>';
+        }
+        echo "<br><a href='index.php?view=view/signup'>Réessayer</a>";
+    } else {
+        return null;
+    }
+}
+
